@@ -11,4 +11,8 @@ public class TestText {
 	private int git1 = 3;
 	
 	private String address = "henan";
+	
+	public static void main(String[] args) {
+		System.out.println("enclosing_type.enclosing_method()");
+	}
 }
