@@ -19,4 +19,10 @@ public class DateUtilTest {
 		int year = DateUtils.getCurrentYear();
 		System.out.println(year);
 	}
+	
+	@Test
+	public void getCurrentDayOfWeek() throws ParseException {
+		int week = DateUtils.getCurrentDayOfWeek(null, null);
+		System.out.println(week);
+	}
 }
