@@ -48,6 +48,12 @@ public class DateUtils {
 		return current == 1 ? 7 : current -1 ;
 	}
 	
+	public static int getCurrentWeekOfYear(String date, String formate) throws ParseException {
+		Date operateDate =changeStr2Date(date, formate);
+		Calendar calendar = Calendar.getInstance();
+		calendar.setTime(operateDate);
+		return calendar.get(Calendar.WEEK_OF_YEAR);
+	}
 	private static Date changeStr2Date(String date, String formate) throws ParseException {
 		
 		return  StringUtils.isBlank(date) ? new Date() : //
