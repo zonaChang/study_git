@@ -14,5 +14,6 @@ public class TestText {
 	
 	public static void main(String[] args) {
 		System.out.println("enclosing_type.enclosing_method()");
+		System.out.println("TestText.main()");
 	}
 }
