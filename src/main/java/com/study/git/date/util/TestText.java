@@ -9,5 +9,5 @@ public class TestText {
 	private String name = "xx";
 	private int age = 2;
 	
-	
+	private String address = "henan";
 }
