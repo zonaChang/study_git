@@ -54,6 +54,14 @@ public class DateUtils {
 		calendar.setTime(operateDate);
 		return calendar.get(Calendar.WEEK_OF_YEAR);
 	}
+	
+	public static int getCurrentWeekOfMonth(String date, String formate) throws ParseException {
+		Date operateDate = changeStr2Date(date, formate);
+		Calendar calendar = Calendar.getInstance();
+		calendar.setTime(operateDate);
+		return calendar.get(Calendar.WEEK_OF_MONTH);
+	}
+	
 	private static Date changeStr2Date(String date, String formate) throws ParseException {
 		
 		return  StringUtils.isBlank(date) ? new Date() : //
