@@ -25,13 +25,32 @@ public class DateUtils {
 	}
 	public static int getCurrentYear(String date, String formate) throws ParseException {
 		
-		StringUtils.isBlank("xxx");
-		Date operateDate = StringUtils.isBlank(date) ? new Date() : //
-			new SimpleDateFormat(StringUtils.isBlank(formate) ? YYYYMMDD : formate)//
-				.parse(date);
-		
+		Date operateDate = changeStr2Date(date, formate);
 		Calendar calendar = Calendar.getInstance();
 		calendar.setTime(operateDate);
 		return calendar.get(Calendar.YEAR);
+	}
+	
+	public static int getCurrentDayOfYear(String date, String formate) throws ParseException {
+		Date operateDate = changeStr2Date(date, formate); 
+		Calendar calendar = Calendar.getInstance();
+		calendar.setTime(operateDate);
+		return calendar.get(Calendar.DAY_OF_YEAR);
+	}
+	
+	public static int getCurrentDayOfWeek(String date, String formate) throws ParseException {
+		
+		Date operateDate = changeStr2Date(date, formate);
+		Calendar calendar = Calendar.getInstance();
+		calendar.setTime(operateDate);
+		int current  = calendar.get(Calendar.DAY_OF_WEEK);
+		return current == 1 ? 7 : current -1 ;
+	}
+	
+	private static Date changeStr2Date(String date, String formate) throws ParseException {
+		
+		return  StringUtils.isBlank(date) ? new Date() : //
+			new SimpleDateFormat(StringUtils.isBlank(formate) ? YYYYMMDD : formate)//
+				.parse(date);
 	}
 }
