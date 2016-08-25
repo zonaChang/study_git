@@ -1,4 +1,7 @@
 package com.study.git.date.util;
+
+import java.io.File;
+
 /**
  * @desc:
  * @author: zona
@@ -15,5 +18,13 @@ public class TestText {
 	public static void main(String[] args) {
 		System.out.println("enclosing_type.enclosing_method()");
 		System.out.println("TestText.main()");
+	}
+	
+	public void read(String path) {
+		File file = new File(path);
+	}
+	
+	public void print(String content) {
+		System.out.println(content);
 	}
 }
