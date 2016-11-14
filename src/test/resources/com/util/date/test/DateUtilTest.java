@@ -25,4 +25,8 @@ public class DateUtilTest {
 		int week = DateUtils.getCurrentDayOfWeek(null, null);
 		System.out.println(week);
 	}
+	
+	public static void main(String[] args) {
+		
+	}
 }
