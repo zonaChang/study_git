@@ -27,4 +27,8 @@ public class TestText {
 	public void print(String content) {
 		System.out.println(content);
 	}
+	
+	public void test() {
+		
+	}
 }
