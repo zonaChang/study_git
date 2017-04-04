@@ -33,4 +33,13 @@ public class MathUtils {
 		}
 		return result;
 	}
+	
+	public int aa(int...is) {
+		
+		int result = 0;
+		for (int i : is) {
+			result += i;
+		}
+		return result;
+	}
 }
