@@ -17,10 +17,18 @@ public class MathUtils {
 		}
 		return result;
 	}
-		public double sub(double target, double... num) {
+	public double sub(double target, double... num) {
 		
 		for (double d : num) {
 			target -= d;
+		}
+		return target;
+	}
+	
+	public double div(double target, double...ds) {
+		
+		for (double d : ds) {
+			target /= d;
 		}
 		return target;
 	}
