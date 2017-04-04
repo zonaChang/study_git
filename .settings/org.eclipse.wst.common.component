@@ -6,6 +6,7 @@
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources/com/study/git/service"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources/com/study/git/util"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/test/resources"/>
         <property name="context-root" value="study_git"/>
         <property name="java-output-path" value="/study_git/target/classes"/>
     </wb-module>
