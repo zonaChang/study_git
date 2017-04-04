@@ -24,4 +24,13 @@ public class MathUtils {
 		}
 		return target;
 	}
+		
+	public double mul(double... num) {
+		
+		double result = 0;
+		for (double d : num) {
+			result *= d;
+		}
+		return result;
+	}
 }
