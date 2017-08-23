@@ -31,4 +31,8 @@ public class TestText {
 	public void test() {
 		
 	}
+	
+	public void sameContent() {
+		System.out.println("不同branch添加相同的内容1, 可能行号不一致, 测试不同分支合并时的情况");
+	}
 }
