@@ -28,18 +28,6 @@ public class TestText {
 		System.out.println(content);
 	}
 	
-	public void sameContent() {
-		System.out.println("不同branch添加相同的内容1, 可能行号不一致, 测试不同分支合并时的情况");
-	}
-	
-	public void sameContent3() {
-		System.out.println("不同branch添加相同的内容3, 可能行号不一致, 测试不同分支合并时的情况");
-	}
-	
-	public void sameContent2() {
-		System.out.println("不同branch添加相同的内容2, 可能行号不一致, 测试不同分支合并时的情况");
-	}
-	
 	public void test() {
 		
 	}
