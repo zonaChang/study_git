@@ -32,3 +32,10 @@ xxxtest
       
 master  add1
 master add2-6
+master add2
+
+release add1-3
+
+release add1-4
+
+release add3-5
