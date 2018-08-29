@@ -49,5 +49,12 @@ release add3-5
 
 master add3-7
 
+<<<<<<< HEAD
 master add4-9
+>>>>>>> master
+=======
+master add4-9
+
+
+faster forward merge commit info
 >>>>>>> master
