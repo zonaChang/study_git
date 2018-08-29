@@ -28,8 +28,6 @@ xxxtest
       
       test merge commit message
       
-----
-      
 master  add1
 master add2-6
 master add2
@@ -38,23 +36,17 @@ release add1-3
 
 release add1-4
 
-<<<<<<< HEAD
 release add3-5
 
 release add4-8
 
 release add5-10
-=======
 release add3-5
 
 master add3-7
 
-<<<<<<< HEAD
 master add4-9
->>>>>>> master
-=======
 master add4-9
 
 
 faster forward merge commit info
->>>>>>> master
