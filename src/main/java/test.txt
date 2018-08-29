@@ -26,7 +26,7 @@ xxxtest
       
       
       
-      
+      test merge commit message
       
 ----
       
@@ -38,8 +38,16 @@ release add1-3
 
 release add1-4
 
+<<<<<<< HEAD
 release add3-5
 
 release add4-8
 
 release add5-10
+=======
+release add3-5
+
+master add3-7
+
+master add4-9
+>>>>>>> master
