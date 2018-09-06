@@ -1,6 +1,8 @@
 package com.study.git.date.util;
 
 import java.io.File;
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * @desc:
@@ -16,8 +18,24 @@ public class TestText {
 	private String address = "henan";
 	
 	public static void main(String[] args) {
-		System.out.println("enclosing_type.enclosing_method()");
-		System.out.println("TestText.main()");
+		try {
+			
+			System.out.println("TestText.main()");
+			System.out.println("enclosing_type.enclosing_method()");
+			
+			List<String> nameList = Arrays.asList("aa", "bb", "cc");
+			try {
+				
+				nameList.remove(0);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+			System.out.println(nameList+".....");
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
 	}
 	
 	public void read(String path) {
@@ -44,4 +62,5 @@ public class TestText {
 	public void sameContent3() {
 		System.out.println("不同branch添加相同的内容3, 可能行号不一致, 测试不同分支合并时的情况");
 	}
+	
 }
