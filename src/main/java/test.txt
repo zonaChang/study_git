@@ -50,5 +50,5 @@ master add4-9
 
 aa,bb,cc,dd,ee
 faster forward merge commit info
-BB
-BB
+AA
+AA
