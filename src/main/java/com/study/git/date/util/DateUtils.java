@@ -2,11 +2,8 @@ package com.study.git.date.util;
 
 
 import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
-
-import org.apache.commons.lang3.StringUtils;
 
 /**
  * @desc:
@@ -64,8 +61,9 @@ public class DateUtils {
 	
 	private static Date changeStr2Date(String date, String formate) throws ParseException {
 		
-		return  StringUtils.isBlank(date) ? new Date() : //
-			new SimpleDateFormat(StringUtils.isBlank(formate) ? YYYYMMDD : formate)//
-				.parse(date);
+//		return  StringUtils.isBlank(date) ? new Date() : //
+//			new SimpleDateFormat(StringUtils.isBlank(formate) ? YYYYMMDD : formate)//
+//				.parse(date);
+		return new Date();
 	}
 }
